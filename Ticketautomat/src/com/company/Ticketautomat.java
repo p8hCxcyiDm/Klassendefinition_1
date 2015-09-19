@@ -18,9 +18,9 @@ public class Ticketautomat
         return preis;
     }
 
-    public int getBisherGezahlt()
+    public void geldEinwerfen(int betrag)
     {
-        return bisherGezahlt;
+        bisherGezahlt = bisherGezahlt + betrag;
     }
 
     public int getGesamtsumme()
