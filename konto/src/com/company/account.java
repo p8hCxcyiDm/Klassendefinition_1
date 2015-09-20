@@ -1,11 +1,11 @@
 package com.company;
 
 /**
- * Represents a bank-account
+ * Represents a bank-Account
  *
  * Created by daellsam on 20.09.2015.
  */
-public class account
+public class Account
 {
     String nameOwner;
     int balance;
@@ -15,11 +15,10 @@ public class account
      * Create account, set the balance to 0 and the interest rate to 2%
      * @param nameOwner
      */
-    public account(String nameOwner)
+    public Account(String nameOwner)
     {
-        this.nameOwner = nameOwner;
+        this(nameOwner, 2);
         this.balance = 0;
-        this.interestRate = 2;
     }
 
     /**
@@ -27,7 +26,7 @@ public class account
      * @param nameOwner
      * @param interestRate
      */
-    public account(String nameOwner, int interestRate)
+    public Account(String nameOwner, int interestRate)
     {
         this.nameOwner = nameOwner;
         this.interestRate = interestRate;
