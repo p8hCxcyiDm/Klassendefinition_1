@@ -7,9 +7,9 @@ package com.company;
  */
 public class Account
 {
-    String nameOwner;
-    int balance;
-    int interestRate;
+    private String nameOwner;
+    private int balance;
+    private int interestRate;
 
     /**
      * Create account, set the balance to 0 and the interest rate to 2%
