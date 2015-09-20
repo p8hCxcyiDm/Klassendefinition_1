@@ -1,7 +1,7 @@
 package com.company;
 
 /**
- * Represents a bank-Account
+ * Represents a bank-account
  *
  * Created by daellsam on 20.09.2015.
  */
