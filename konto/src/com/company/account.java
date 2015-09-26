@@ -1,7 +1,7 @@
-package com.company;
+//package com.company;
 
 /**
- * Represents a bank-account
+ * Represents a bank-account.
  *
  * Created by daellsam on 20.09.2015.
  */
@@ -12,7 +12,7 @@ public class Account
     private int interestRate;
 
     /**
-     * Create account, set the balance to 0 and the interest rate to 2%
+     * Create account, with default values.
      * @param nameOwner
      */
     public Account(String nameOwner)
@@ -22,7 +22,7 @@ public class Account
     }
 
     /**
-     * Create account and set the balance to 0
+     * Create account and set the balance
      * @param nameOwner
      * @param interestRate
      */
@@ -33,7 +33,7 @@ public class Account
     }
 
     /**
-     * Get the interest Rate
+     * Get the interest Rate.
      * @return interest Rate
      */
     public int getInterestRate()
@@ -42,7 +42,7 @@ public class Account
     }
 
     /**
-     * Set the interest Rate
+     * Set the interest Rate.
      * @param interestRate
      */
     public void setInterestRate(int interestRate)
@@ -51,7 +51,7 @@ public class Account
     }
 
     /**
-     * Increment the balance
+     * Increment the balance.
      * @param increment the amount to increment
      */
     public void incBalance(int increment)
@@ -60,7 +60,7 @@ public class Account
     }
 
     /**
-     * Decrement the balance
+     * Decrement the balance.
      * @param decrement the amount to decrement
      */
     public void decBalance(int decrement)
@@ -69,8 +69,8 @@ public class Account
     }
 
     /**
-     * Calculate the current interest
-     * @return
+     * Calculate the current interest.
+     * @return balance
      */
     public int interestPerAnnum()
     {
@@ -80,7 +80,7 @@ public class Account
     }
 
     /**
-     * Print account informations
+     * Print account informations.
      */
     public void printAccount()
     {

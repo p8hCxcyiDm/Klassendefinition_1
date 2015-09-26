@@ -8,14 +8,15 @@
 public class buch
 {
     public String titel;
-    private String isbn;
+    private final String isbn;
     private int bestand;
 
     /**
      * Erzeugt ein Buch mit den spezifizierten Werten fuer
      * Titel und ISBN-Nummer und setzt den Bestand auf 0.
      *
-     * @param buchTitel Der Buchtitel.
+     * @param buchTitel
+     * @param buchISBN 
      */
     public buch(String buchTitel, String buchISBN)
     {
@@ -23,13 +24,23 @@ public class buch
         isbn = buchISBN;
     }
 
-    public long getBestand()
+    /**
+     * Get the stock.
+     * 
+     * @return numbers of books in the stock
+     */
+    public long getStock()
     {
         return bestand;
     }
 
-
-    public long incBestand(int veraenderung)
+    /**
+     * Change the stock.
+     * 
+     * @param veraenderung
+     * @return stock
+     */
+    public long changeStock(int veraenderung)
     {
         bestand = bestand + veraenderung;
         return bestand;
